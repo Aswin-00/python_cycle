@@ -12,9 +12,11 @@ print a pattern of star
 
 def pattern(n):
     for i in range(0,n):
-        print(((i+(i+1))*'*').center(20))
-pattern(5)
-        
-
+        print(((i+(i+1))*'*').center(n*4))
+i=0
+while True:
+    pattern(i)
+    i+=1
+    
 
 

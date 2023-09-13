@@ -9,13 +9,17 @@ two loop exectution
 
 
 def table():
+    print(" ",end=' ')
     for i in range(1,11):
-        print(i,end=' ')
+        print((f'{i}').rjust(4),end=' ')
     print()
-    print('-'*30)
+    print('-'*70)
 
     for i in range(1,11):
-        print(i,'|',end=' ')
+        print((f'{i}|').rjust(4),end=' ')
         for j in range(1,11):
-            print(f'{i*j}' ,end=' ')
+            print((f'{i*j}').rjust(4) ,end=' ')
         print('\n')
+
+
+table()
