@@ -16,10 +16,11 @@ sum of 4 power 3 + 0 power 3 + 7 power 3 =407
 
 def powerfind(num):
     i=0
-    number=num
     while(int(num/10**(i))!=0):
         i+=1
     return(i)
+
+
 
 def amstrong(number,power):
     n=power-1

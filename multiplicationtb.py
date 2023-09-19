@@ -11,7 +11,7 @@ two loop exectution
 def table():
     print(" ",end=' ')
     for i in range(1,11):
-        print((f'{i}').rjust(4),end=' ')
+        print((f'{i:2f}'),end=' ')
     print()
     print('-'*70)
 
