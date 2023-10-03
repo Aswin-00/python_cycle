@@ -1,4 +1,4 @@
-#programe to print pattern
+ #programe to print pattern
 
 #python 3.10.12
 
@@ -18,13 +18,14 @@ def pattern(n):
 
 
 def pattern_hardcode(n):
-    for i in range(0,n):
+    for i in range(0,n+1):
         print()
         print(' '*(n-i),end='')
         print("*"*(i),end='')
-##        print("*"*(i-1),end='')
+        print("*"*(i-1),end='')
 ##    
         
 pattern_hardcode(5)
 
-patter(5)
+print()
+pattern(5)

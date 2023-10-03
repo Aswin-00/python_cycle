@@ -26,7 +26,8 @@ def amstrong(number,power):
     n=power-1
     temp=number
     sumup=0
-    while (n!=-1):
+    
+    while (temp!=0):
        y=temp//(10**n)
 ##       print(y,n)
        temp=temp%(10**n)
@@ -40,8 +41,21 @@ def amstrong(number,power):
         return False
 
 
+##for i in range(1,1001):
+##    if amstrong(i,powerfind(i))==True:
+##        print(i,end=' ')
+
+
+#method 2  only for python 
+ 
+def easy(n):
+    am=0
+    for i in str(n):
+        am+=int(i)**(len(str(n)))
+    if am==n:
+        return True   
+    return False
+
 for i in range(1,1001):
-    if amstrong(i,powerfind(i))==True:
+    if easy(i)==True:
         print(i,end=' ')
-
-
