@@ -17,10 +17,16 @@ def is_prime(n):
         return True
 
 
-if __name__=='__main__':
-    
+
+def main():
     number=int(input("Enter a number you want to check :- "))
+
     if (is_prime(number)==True):
-        print(f'The number:-{number} is prime Number')
+        print(f'The number {number} is prime Number')
     else:
-        print(f"The number:-{number} is Not  prime Number")
+        print(f"The number {number} is Not  prime Number")
+
+
+if __name__=='__main__':
+    main()    
+    

@@ -23,18 +23,22 @@ Months=0
 Rate=0
 
 
-def equation(Rate,Annual_amount,Months):
-    up=Rate*Annual_amount
-    down=1-(1+Rate)**(-Months)
-    return up/down
+def equation(R,A,M):
+    P=(R*A)/(1-((1+R)**-M))
+    return P
 
 def user_input():
-    Aamoutt=int(input("Enter the loan amount :-$"))
-    rate=float(input("Enter the annual interset rate % :-"))
-    Months= int(input("Enter the number of months : "))
-    print(equation())
+    A=float(input("Enter the loan amount :-$"))
+    R =float(input("Enter the annual interset rate % :-"))
+    R=(R/100/12)
+    M= int(input("Enter the number of months : "))
 
-def main():
-    user_input()
     print('Loan Details: ')
+    print(f'princil loan amount: {equation(R,A,M): .2f}')
+    
+def main():
+    
+    user_input()
+
+
 main()
