@@ -57,6 +57,31 @@ def number_condition(pasw):
         
     
 
+'''
+def main():
+    password = input("Enter the password: ")
+
+    if valid_password(password):
+        print('This password is valid')
+    else:
+        print('This password is invalid!')
+
+
+def valid_password(pasw):
+    conditions = [
+        len(pasw) >= 7,
+        any(c.isupper() for c in pasw),
+        any(c.islower() for c in pasw),
+        any(c.isnumeric() for c in pasw)
+    ]
+    return all(conditions)
+
+
+if __name__ == "__main__":
+    main()
+
+'''
+
 
 
 if __name__=="__main__":

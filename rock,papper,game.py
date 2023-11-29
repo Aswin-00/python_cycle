@@ -101,7 +101,19 @@ def win_condtion(x,y):
     else:
         print(f'some thing went wron contact the developer {x,y}')
         return('404')
-        
+ 
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return None  # It's a tie
+    elif (
+        (user_choice == 'rock' and computer_choice == 'scissor') or
+        (user_choice == 'scissor' and computer_choice == 'paper') or
+        (user_choice == 'paper' and computer_choice == 'rock')
+    ):
+        return 'user'
+    else:
+        return 'computer'       
         
     
 #call main body

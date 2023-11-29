@@ -30,7 +30,7 @@ def equation(R,A,M):
 def user_input():
     A=float(input("Enter the loan amount :-$"))
     R =float(input("Enter the annual interset rate % :-"))
-    R=(R/100/12)
+    R=(R/100)/12
     M= int(input("Enter the number of months : "))
 
     print('Loan Details: ')
