@@ -39,15 +39,14 @@ class contact:
                            }
 # -`update_contact(name, new_phone_number, new_email)` - Update the phone number 
 
-    def update_contact(self,name,phone_number='',email=''):
-        if phone_number =='' and email=='':
+    def update_contact(self,name,new_phone_number='',new_email=''):
+        if new_phone_number =='' and new_email=='':
             print('no value given')
  
         else:
-            self.contact_list[name].update({
-                           'phone_number':phone_number,
-                           'email':email
-                           })
+            self.contact_list[name]['phone_number']=new_phone_number
+            self.contact_list[name]['email']=new_email
+            
 
 
             
@@ -70,6 +69,9 @@ if __name__=="__main__":
     c=contact()
     c.add_contact('aswin','9909185611','aswingirish00@gmail.com')
     c.add_contact('jithin','9959185611','aswingirish00@gmail.com')
-    c.list_contacts()    
+##    c.list_contacts()    
     c.update_contact('aswin','768666667','bootpq@gmail.com')
+##    c.list_contacts()
+##    c.delete_contact('aswin')
+
     c.list_contacts()

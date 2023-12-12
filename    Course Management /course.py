@@ -84,6 +84,8 @@ class Student:
     
 x=Course('123332','python','6')
 x.get_course_info()
+
+
         
         
         

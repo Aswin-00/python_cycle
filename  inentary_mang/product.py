@@ -50,18 +50,18 @@ class Product:
             print('not a valid amount')
             
                 
-
     def get_description(self):
-        return(f'product desription\nproduct_id = {self.product_id }\nproduct name = {self.name}\nprice = {self.price}')    
+        return(f'product desription\nproduct_id = {self.product_id }\nproduct name = {self.name}\nprice = {self.price}')
+    
+    def __str__(self):
+         return(f'{self.name}')    
 
 class Electronics(Product):
-
     def __init__(self,product_id,name,price,manfct):
         super().__init__(product_id,name,price)
         self.manufacturer=manfct
            
 class Clothing(Product):
-
     def __init__(self,product_id,name,price,size):
         super().__init__(product_id,name,price)
         self.size=size
